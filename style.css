@@ -1,17 +1,15 @@
 body {
     color: green;
     font-family: sans-serif;
-    text-align: center;
+    text-align: left;
     border: double;
     border-color: green;
-    position: relative;
-}
-.btn.btn-primary {
-    color: black;
 }
 h2 {
     font-family: sans-serif;
-    color: blue;
     border: solid;
     border-color: green;
+}
+title {
+    text-align: center;
 }
