@@ -1,33 +1,26 @@
-body {
+h1 {
     color: green;
     font-family: sans-serif;
     text-align: left;
-    border: double;
-    border-color: green;
 }
+
 h2 {
     font-family: sans-serif;
     border: solid;
     border-color: green;
 }
+
 title {
     text-align: center;
 }
-ul {
-    position: center;
-}
+
 table {
     margin: center;
 }
 
-div {
-    margin: auto;
-    padding-right: inherit
-    color: red;
-}
 .banner {
   background-color: #D3D3D3;
   padding: 120px 0;
   margin-top: 77px;
   text-align: center;
-  
+}
