@@ -9,7 +9,7 @@
 }
 
 .table {
-    margin: center;
+    position: absolute;
 }
 
 .banner {
@@ -26,3 +26,6 @@
     transform: rotate(270deg);
 }
 
+.footer {
+    pull; right: 
+}
