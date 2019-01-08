@@ -27,6 +27,16 @@
 </ul>
 </body>
 
+<script>
+  function clkme(){
+    var ptext = document.getElementById('ptext')
+    ptext.innerHTML = 'BRUH'
+    ptext.style.fontSize= "1000px"
+    ptext.style.backgroundColor= "blue"
+    ptext.style.color= "#ff6600"
+  }
+</script>
+
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -38,3 +48,11 @@
   <td>
     <tr><center><video src="python.webm" width="820" height="400"  controls></center></tr>
     <tr><center>TEXT ABOUT GAME</center></tr>
+  </td>
+</table>
+
+<body>
+  <button type="button" onclick=clkme() ><img class="image1" src="troll.jpeg" width=2940></button>
+  <p id="ptext">Press this button to Monkey</p>
+  
+</body>
