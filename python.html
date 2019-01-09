@@ -89,6 +89,11 @@
   
   <p id="jeff"> What my name again?</p>
   
+  
+  <img id="okay" src="monkey.webp">
+
+  <button type="button" id="okay" onclick=fortnite()>fortnite monkey</button>
+  
 <script>
   function clkme(){
    var ptext = document.getElementById('ptext')
@@ -118,6 +123,12 @@
    
  }
  
+ function fortnite(){
+   var pic = document.getElementById("okay")
+   pic.src="wavecheck.jpg"
+   pic.innterHTML = 'WAVE CHECK'
+ }
+ 
  var word = "Monkey " + "Ice Cream " + "🅂🄾🅄🄹🄰 🄱🄾🅈"
  document.getElementById("name").innerHTML = word
  
@@ -126,6 +137,6 @@
  jeff.style.color= "#ff6600"
  jeff.style.fontSize= "500px"
  
+ 
 </script>
-  
 </body>
