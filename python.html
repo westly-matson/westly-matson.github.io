@@ -24,6 +24,9 @@
     <li class="nav-item">
     <a class="nav-link " href="python.html">python project</a>
   </li>
+    <li class="nav-item">
+    <a class="nav-link " href="story.html">story</a>
+  </li>
 </ul>
 </body>
 
@@ -73,7 +76,7 @@
 <table>
   <td>
     <tr><center><video src="python.webm" width="820" height="400"  controls></center></tr>
-    <tr><center>This game is about a soldier on the battle feild, he is under attack and needs to make some hearbreakin decisions</center></tr>
+    <tr><center>This game is about a soldier on the battle field, he is under attack and needs to make some hearbreakin decisions</center></tr>
   </td>
 </table>
 
@@ -89,14 +92,69 @@
   
   <p id="jeff"> What my name again?</p>
   
-  
-  <img id="okay" src="monkey.webp">
+  <img id="okay" src="monkey.webp" height="1500" width="1000">
 
   <button type="button" id="alk" onclick=fortnite()>fortnite monkey</button>
+  <button id="showImg" type="button" onCLick=showImg()>show</button>
+  <button id="hideImg" type="button" onCLick=hideImg() >hide</button>
   
-  <img id="alk" src="notigor.jpg" width=700 height=500>
+  
   
 <script>
+
+  var state = "buttonpic"
+  var pic = getElementById("okay")
+  
+ 
+ var button2 = document.createElement("button")
+ var buttonText = document.createTextNode("Monkey (yea there are 2 monkeys)")
+ button2.appendChild(buttonText)
+ button2.setAttribute("onclick", "fortnite()")
+ button2.setAttribute("id", "Bubblegum")
+ 
+  document.body.appendChild(button2)
+ 
+ var button3 = document.createElement("button")
+ var buttontext = document.createTextNode("God damn how many buttons do you need")
+ button3.appendChild(buttonText)
+ button3.setAttribute("onclick", "Adder()")
+ button3.setAttribute("id", "button3")
+ 
+  document.body.appendChild(button3)
+ 
+   function fortnite(){
+     
+     if (state == "buttonpic"){
+        var pic = document.getElementById("okay")
+        pic.src = "wavecheck.jpg"
+        alert ("FLOOD WARNING!!!!!!!")
+        var button = document.getElementById("alk")
+        button.innerHTML = "Okay, these waves kinda fresh doe"
+        state = "monkey"
+  }
+  else if (state == "monkey"){
+        var pic = document.getElementById("okay")
+        pic.src = "monkey.webp"
+        alert("dis moneky fresh")
+        var button = document.getElementById("alk")
+        button.innerHTML = "Okay, dis monkey got aids"
+        state = "butt"
+  }
+    else if (state == "butt"){
+        var pic = document.getElementById("okay")
+        pic.src = "notigor.jpg"
+        alert("this cool guy")
+        var button = document.getElementById("alk")
+        button.innerHTML = "jaws"
+        state = "please"
+}
+    else if (state == "please"){
+      var pic = document.getElementById("okay")
+      pic.src = "poop.jpg"
+      var button = document.getElementById("alk")
+      button.innerHTML = "😩😩😩"
+      state = "buttonpic"
+}
   function clkme(){
    var ptext = document.getElementById('ptext')
     ptext.innerHTML = 'BRUH'
@@ -105,7 +163,7 @@
     ptext.style.color= "#ff6600"
     alert("The following images may be disturbing to all viewers")
   }
-  
+}
   function Adder(){
     var x = 20
     var y = 1
@@ -124,15 +182,7 @@
    ptext.style.color= "#FF0000"
    
  }
- 
- function fortnite(){
-   var pic = document.getElementById("okay")
-   pic.src="wavecheck.jpg"
-   alert ("WAVE CHECK")
-   var button = document.getElementById("alk")
-   button.innerHTML = "Okay, these waves kinda fresh doe"
- }
- 
+
  var word = "Monkey " + "Ice Cream " + "🅂🄾🅄🄹🄰 🄱🄾🅈"
  document.getElementById("name").innerHTML = word
  
@@ -141,6 +191,25 @@
  jeff.style.color= "#ff6600"
  jeff.style.fontSize= "500px"
  
+ var w = 7
  
+ function hideImg(){
+     pic.style.display = "none"
+ }
+ 
+ function showImg(){
+     pic.style.display = "block"
+ }
+ 
+ if (w > 6){
+    document.getElementById("name").innerHTML = "Dis monkey kinds fresh doe."
+    
+ }
+ else{
+   document.getEmelentById("name").innerHTML = "Okay monkey"
+ }
+
+
+
 </script>
 </body>
