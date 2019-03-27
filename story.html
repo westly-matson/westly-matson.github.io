@@ -24,6 +24,9 @@
     <li class="nav-item">
     <a class="nav-link " href="story.html">story</a>
   </li>
+    <li class="nav-item">
+    <a class="nav-link " href="pythonproject.html">Python Quiz</a>
+  </li>
 </ul>
 </body>
 
@@ -71,6 +74,31 @@
           font-family: "Comic Sans MS";
           font-size: 15px;
           
+        	  #storytext{
+		position: absolute;
+		left:56%;
+		right: 0px;
+		top: 40px;
+		bottom: 50px;
+		/*background: blue;*/
+		
+	  }
+	  
+	 
+	 #graphic{
+	 max-height: 100%;
+	 max-width: 100%;
+	 width: 100%;
+	 height: 100%;
+	 }
+	 
+	 #text{
+	 	color:white;
+	 	font-size: 20px;
+	 }
+	</style>
+
+          
         }
  
     </style>
@@ -107,7 +135,7 @@
       
     <div id="rightpane">
       <div id="storytext">
-      <p>It was one of those days in the country of Sterlingard. Silver (you), a corporal in the army was on a security duty along the border wall of the country. Sterlingard was just a small country at war. The only thing that everyone was worried was the fact that they could be attacked at any moment, witch..had became  true.
+      <p id="text"> It was one of those days in the country of Sterlingard. Silver (you), a corporal in the army was on a security duty along the border wall of the country. Sterlingard was just a small country at war. The only thing that everyone was worried was the fact that they could be attacked at any moment, witch..had became  true.
       “BRUH MOMENT INBOUND!” He looked up towards the top of the wall and the first thing he was his fellow soldier’s head blown to bits by multiple shots from the machine gun. Silver knew what to do, he and the other soldiers headed towards the large metal gate and tried to block it from opening, even though he knew that the enemy would be smart enough to climb the wall. Multiple traps were set on the wall through.“We can handle here! Go and do what you have to do!!” Silver heard his best friend, Sterlyn Schmidt.</p>
       
     </div>
@@ -116,9 +144,10 @@
       <button id="b1" type="button" class="btn btn-danger">Danger</button>
       <button id="b2" type="button" class="btn btn-danger">Danger</button>
       <button id="b3" type="button" class="btn btn-danger">Danger</button>
-      <button id="b4" type="button" class="btn btn-danger">MONKEY</button>
+      <button id="b4" type="button" class="btn btn-danger">Danger</button>
     </div>
     </div>
+    
 <script>
   
   var garphic = document.getElementById("graphic")
@@ -127,12 +156,12 @@
   var b2 = document.getElementById("b2")
   var b3 = document.getElementById("b3")
   var b4 = document.getElementById("b4")
-  var state = "ReadyToStart"'
+  var state = "start"
   
-  Function ReadyToStart(){
-    text.innerHTML = "";
+  Function start(){
+    text.innerHTML = "It was one of those days in the country of Sterlingard. Silver (you), a corporal in the army was on a security duty along the border wall of the country. Sterlingard was just a small country at war. The only thing that everyone was worried was the fact that they could be attacked at any moment, witch..had became  true.'BRUH MOMENT INBOUND!' He looked up towards the top of the wall and the first thing he was his fellow soldier’s head blown to bits by multiple shots from the machine gun. Silver knew what to do, he and the other soldiers headed towards the large metal gate and tried to block it from opening, even though he knew that the enemy would be smart enough to climb the wall. Multiple traps were set on the wall through.'We can handle here! Go and do what you have to do!!” Silver heard his best friend, Sterlyn Schmidt.'";
     b1.innerHMTL = "go save Schmidt";
-    b2.innerHMTL = "Go save yourself";
+    b2.innerHMTL = "save yourself";
     b3.style.display = "none";
     b4.style.display = "none";
     graphic.src = "tyler.jpg";
@@ -142,10 +171,15 @@
   
   
   
-  function buttonclick(button){
-    if(state == "ReadyToStart")
-      if(button == 1){
-       
+	function buttonclick(button){
+		if (state == "start"){
+		if (button == 1){
+			state = "start2"
+			start2()
+			}
+			else if (button == 2){
+				state="next"
+				next()
   }
 </script>
   
